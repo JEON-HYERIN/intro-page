@@ -1,3 +1,23 @@
+// header
+var header = document.getElementById('header');
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > 200) {
+    header.classList.add('minimize');
+  } else {
+    header.classList.remove('minimize');
+  }
+});
+
+// portfolio view btn
+$('.main-home .btn').on('click', function () {
+  if (onAnimation === true) {
+    return false;
+  }
+  var offset = $('.main-portfolio').offset().top;
+  $('html, body').stop(true).animate({'scrollTop': offset + 'px'}, 500);
+});
+
+// section page
 var numPage = $('#main section.page').length;
 var pageNow = 0;
 var pagePrev = 0;
