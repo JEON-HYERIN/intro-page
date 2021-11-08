@@ -25,11 +25,69 @@
   <!-- Lodash -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script defer src="./js/main.js"></script>
 </head>
 <body>
+  <div id="wrapper">
+    <a href="#main" id="skip-nav">본문 바로가기</a>
+    <!-- HEADER -->
+    <header id="header">
+      <h1>JEON hye-rin</h1>
+      <!-- NAV -->
+      <nav id="gnb">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main id="main">
+      <ul id="page-indicator">
+      </ul>
+      <section class="main-home page">
+        <div class="bg-left bg bg--white"></div>
+        <div class="bg-right bg bg--green"></div>
+        <div class="inner">
+
+          <div class="content-group">
+            <h2 class="title">
+              Hello,<br />
+              my name is Hyerin
+            </h2>
+            <div class="wrap">
+              <p class="description">
+                WEB PUBLISHER
+                HYERIN'S PORTFOLIO.
+              </p>
+              <a href="#" class="btn">
+                VIEW PORTFOLIO
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <section class="main-about page">
+        <div class="bg-left bg bg--green"></div>
+        <div class="bg-right bg bg--white"></div>
+      </section>
+      <section class="main-portfolio page">
+        <div class="bg-left bg bg--white"></div>
+        <div class="bg-right bg bg--green"></div>
+      </section>
+      <section class="main-contact page">
+        <div class="bg-left bg bg--green"></div>
+        <div class="bg-right bg bg--white"></div>
+      </section>
+    </main>
+  </div>
   
 </body>
 </html>
