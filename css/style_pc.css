@@ -14,7 +14,7 @@ h3 {
   text-align: center;
 }
 
-section.page {
+.page {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -62,7 +62,7 @@ section.page {
   left: 0;
   top: 0;
   width: 100%;
-  height: 75px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,7 +75,7 @@ section.page {
 }
 
 #header.minimize {
-  height: 60px;
+  height: 55px;
   border-bottom-color: #212121;
 }
 
@@ -92,7 +92,7 @@ section.page {
 #header h1 span {
   font-size: 25px;
   font-weight: 700;
-  color: #212121;
+  color: #00695c;
 }
 
 #gnb ul {
@@ -187,7 +187,7 @@ section.page {
 }
 
 /* ABOUT */
-.main-about .about{
+.main-about .about {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -219,12 +219,10 @@ section.page {
   flex-basis: 50%;
 }
 
-.about__history > ul {}
-.about__history > ul > li {}
-
 .about__history > ul > li + li {
   margin-top: 10px;
 }
+
 .about__history > ul > li > span {
   font-size: 23px;
   font-weight: 500;
@@ -232,7 +230,7 @@ section.page {
   letter-spacing: 0.5px;
   color: #1b1b1b;
 }
-.about__history > ul > li > ul {}
+
 .about__history > ul > li > ul > li {
   font-size: 15px;
   line-height: 1.6em;
@@ -251,4 +249,87 @@ section.page {
 
 .about__history .skills li {
   display: inline-block;
+}
+
+.about__history .skills li + li::before {
+  content: ', ';
+}
+
+
+/* PORTFOLIO */
+/* COMMON */
+.main-portfolio .page .portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.main-portfolio .page .image {
+  flex-basis: 40%;
+}
+
+.main-portfolio .page .text-group {
+  flex-basis: 50%;
+}
+
+.main-portfolio .page .title {
+  font-size: 45px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.main-portfolio .page .skill li {
+  display: inline-block;
+  font-size: 13px;
+}
+
+.main-portfolio .page .skill li + li {
+  margin-left: 5px;
+}
+
+.main-portfolio .page .description {
+  margin: 25px 0 20px;
+  font-size: 15px;
+  line-height: 1.6em;
+}
+
+.main-portfolio .page .links li {
+  display: inline-block;
+}
+
+.main-portfolio .page .links li a {
+  display: block;
+  padding: 8px 12px;
+  border: 1px solid #00695c;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #00695c;
+  transition: .3s;
+}
+
+.main-portfolio .page .links li + li {
+  margin-left: 5px;
+}
+
+.main-portfolio .page .text-group em {
+  display: block;
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #424242;
+}
+
+.main-portfolio .page .text-group em::before {
+  content: '*';
+}
+
+/* JEJU-BEER */
+.main-portfolio .page.jeju-beer .title {
+  color: #1ecad3;
+}
+
+.main-portfolio .page.jeju-beer .links li:hover a {
+  color: #fff;
+  background-color: #1ecad3;
 }
