@@ -391,10 +391,9 @@ h3 {
   background-color: #f4f4f4;
 }
 
-.main-contact .inner {}
 .main-contact .inner > p {
   text-align: center;
-  margin: 20px 0 100px;
+  margin-top: 20px;
   font-size: 15px;
   line-height: 1.6em;
 }
@@ -402,12 +401,16 @@ h3 {
 .contact__links {
   display: flex;
   justify-content: center;
-  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
   text-align: center;
 }
 
 .contact__links li {
-  flex-basis: 33.33%;
+  flex-basis: 31%;
 }
 
 .contact__links li a {
