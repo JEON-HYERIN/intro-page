@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Hyerin's Portfolio</title>
+  <title>전혜린 포트폴리오</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="./favicon.ico" />
@@ -23,7 +23,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style_pc.css" media="screen and (min-width: 850.1px)" />
+  <link rel="stylesheet" href="./css/style_mobile.css" media="screen and (max-width: 850.0px)" />
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script defer src="./js/main.js"></script>
 </head>
@@ -34,7 +35,7 @@
     <header id="header">
       <h1>
         <a href="#">
-        <img src="./img/logo.png" alt="" />
+        <img src="./img/logo.png" alt="J" />
         <span>hyerin</span>
       </a>
       </h1>
@@ -52,16 +53,18 @@
     <main id="main">
       <ul id="page-indicator">
       </ul>
+      <!-- HOME -->
       <section class="main-home page">
+        <h2 class="hide">홈 영역</h2>
         <div class="bg-left bg bg--white"></div>
         <div class="bg-right bg bg--green"></div>
         <div class="inner">
 
           <div class="content-group">
-            <h2 class="title">
+            <div class="title">
               Hello,<br />
               my name is Hyerin
-            </h2>
+            </div>
             <div class="wrap">
               <p class="description">
                 WEB PUBLISHER
@@ -71,14 +74,72 @@
                 VIEW PORTFOLIO
               </a>
             </div>
-
           </div>
 
         </div>
       </section>
+      <!-- ABOUT -->
       <section class="main-about page">
+        <h2 class="hide">자기소개 영역</h2>
         <div class="bg-left bg bg--green"></div>
         <div class="bg-right bg bg--white"></div>
+        <div class="inner">
+
+          <h3>About me</h3>
+          <div class="about">
+            <div class="about__profile">
+              <div class="image">
+                <img src="./img/profile2.jpg" alt="">
+                <div class="comment">
+                  <em>전혜린 Jeon Hyerin</em><br />
+                  Web Publisher
+                </div>
+              </div>
+            </div>
+            <div class="about__history">
+              <ul>
+                <li class="education">
+                  <span>Education</span>
+                  <ul>
+                    <li>2018.02 용인대학교 경영정보학과 졸업</li>
+                    <li>2014.02 서울여자고등학교 졸업</li>
+                  </ul>
+                </li>
+                <li class="certificate">
+                  <span>Certificate</span>
+                  <ul>
+                    <li>2021.10 웹디자인기능사 필기 합격</li>
+                    <li>2018.08 (국가공인)전산회계 2급 취득</li>
+                    <li>2018.05 컴퓨터활용능력 1급 취득</li>
+                    <li>2017.08 워드프로세서 1급 취득</li>
+                    <li>2016.02 MOS Master 취득</li>
+                  </ul>
+                </li>
+                <li class="advantage">
+                  <span>Advantage</span>
+                  <ul>
+                    <li>2021.07~ 꾸준한 TIL(Today I Learned)작성으로 게시글 <em> 60개</em> 이상 보유
+                      <a href="https://velog.io/@jeonhyelin" target="_blank">블로그 이동</a>
+                    </li>
+                    <li>2021.07~ github <em>350개</em> 이상의 commit
+                      <a href="https://github.com/JEON-HYERIN" target="_blank">gihub 이동</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="skills">
+                  <span>Skills</span>
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JQuery</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
       </section>
       <section class="main-portfolio page">
         <div class="bg-left bg bg--white"></div>

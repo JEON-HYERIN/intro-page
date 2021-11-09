@@ -4,6 +4,40 @@
   overflow: hidden;
 }
 
+h3 {
+  position: relative;
+  z-index: 1;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #212121;
+  text-align: center;
+}
+
+section.page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 55px 0;
+  box-sizing: border-box;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.bg-left {
+  width: 45%;
+  left: 0;
+}
+
+.bg-right {
+  width: 55%;
+  right: 0;
+}
+
 .bg--white {
   background-color: #f4f4f4;
 }
@@ -12,21 +46,7 @@
   background-color: #c2d5d6;
 }
 
-.bg-left {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-}
 
-.bg-right {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-}
 
 /* INNER */
 .inner {
@@ -55,7 +75,7 @@
 }
 
 #header.minimize {
-  height: 65px;
+  height: 60px;
   border-bottom-color: #212121;
 }
 
@@ -126,18 +146,7 @@
   background-color: #fff;
 }
 
-section.page {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-.main-home {
- 
-}
-
-
-
+/* HOME */
 .main-home .content-group {
   display: flex;
   flex-direction: column;
@@ -177,12 +186,69 @@ section.page {
   background-color: #f4f4f4;
 }
 
-.main-about {
-  
+/* ABOUT */
+.main-about .about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
-.main-portfolio {
-  
+
+.about__profile {
+  flex-basis: 45%;
 }
-.main-contact {
-  
+
+.about__profile .image {
+  width: 230px;
+  margin: 0 auto;
+}
+
+.about__profile .comment {
+  padding: 5px 20px;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: #fafafa;
+}
+
+.about__profile .comment em {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.about__history {
+  flex-basis: 50%;
+}
+
+.about__history > ul {}
+.about__history > ul > li {}
+
+.about__history > ul > li + li {
+  margin-top: 10px;
+}
+.about__history > ul > li > span {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.8em;
+  letter-spacing: 0.5px;
+  color: #1b1b1b;
+}
+.about__history > ul > li > ul {}
+.about__history > ul > li > ul > li {
+  font-size: 15px;
+  line-height: 1.6em;
+}
+
+.about__history .advantage em {
+  color: #00695c;
+}
+
+.about__history .advantage a {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #616161;
+}
+
+.about__history .skills li {
+  display: inline-block;
 }
