@@ -13,7 +13,7 @@ $('.main-home .btn').on('click', function () {
   if (onAnimation === true) {
     return false;
   }
-  var offset = $('.main-portfolio').offset().top;
+  var offset = $('.main-contact').offset().top;
   $('html, body').stop(true).animate({'scrollTop': offset + 'px'}, 500);
 });
 

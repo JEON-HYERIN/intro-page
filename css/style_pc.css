@@ -352,6 +352,7 @@ h3 {
 }
 
 .main-portfolio .page.cotieshop .links li:hover a {
+  border-color: #000;
   color: #000;
   background-color: #F0EDE6;
 }
@@ -364,4 +365,15 @@ h3 {
 .main-portfolio .page.outback .links li:hover a {
   color: #fff;
   background-color: #b10a11;
+}
+
+/* WISE WEDDING */
+.main-portfolio .page.wisewedding .title {
+  color: #bf8365;
+}
+
+.main-portfolio .page.wisewedding .links li:hover a {
+  border-color: #bf8365;
+  color: #fff;
+  background-color: #bf8365;
 }
