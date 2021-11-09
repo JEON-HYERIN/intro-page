@@ -26,6 +26,22 @@ menuBtn.addEventListener('click', function () {
   gnb.classList.toggle('open');
 });
 
+// gnb 영역
+var sections = document.querySelectorAll('#main section'); 
+gnb.addEventListener('click', function (e) {
+  var menu = e.target.dataset.menu || e.target.parentElement.dataset.menu;
+  var type = 0;
+  if (menu === undefined) {
+    return false;
+  }
+  sections.forEach(function (section) {
+    type = section.dataset.type;
+    if (menu === type) {
+      section.scrollIntoView({behavior: 'smooth'});
+    }
+  });
+});
+
 // portfolio view btn
 $('.main-home .btn').on('click', function () {
   if (onAnimation === true) {

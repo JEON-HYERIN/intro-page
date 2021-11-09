@@ -41,10 +41,10 @@
       <!-- NAV -->
       <nav id="gnb">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li data-menu="home"><a href="#">Home</a></li>
+          <li data-menu="about"><a href="#">About</a></li>
+          <li data-menu="portfolio"><a href="#">Portfolio</a></li>
+          <li data-menu="contact"><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -53,7 +53,7 @@
       <ul id="page-indicator">
       </ul>
       <!-- HOME -->
-      <section class="main-home page">
+      <section class="main-home page" data-type="home">
         <h2 class="hide">홈 영역</h2>
         <div class="bg-left bg bg--white"></div>
         <div class="bg-right bg bg--green"></div>
@@ -78,7 +78,7 @@
         </div>
       </section>
       <!-- ABOUT -->
-      <section class="main-about page">
+      <section class="main-about page" data-type="about">
         <h2 class="hide">자기소개 영역</h2>
         <div class="bg-left bg bg--green"></div>
         <div class="bg-right bg bg--white"></div>
@@ -141,7 +141,7 @@
         </div>
       </section>
       <!-- PORTFOLIO -->
-      <section class="main-portfolio">
+      <section class="main-portfolio" data-type="portfolio">
         <h2 class="hide">포트폴리오 영역</h2>
         <!-- JEJU BEER -->
         <div class="jejubeer page">
@@ -302,7 +302,7 @@
         </div>
       </section>
       <!-- CONTACT -->
-      <section class="main-contact page">
+      <section class="main-contact page" data-type="contact">
         <div class="inner">
 
           <h3>Contact Me</h3>
