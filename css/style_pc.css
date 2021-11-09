@@ -348,10 +348,20 @@ h3 {
 
 /* COTIE SHOP */
 .main-portfolio .page.cotieshop .title {
-  color: #F0EDE6;
+  color: #000;
 }
 
 .main-portfolio .page.cotieshop .links li:hover a {
   color: #000;
   background-color: #F0EDE6;
+}
+
+/* OUTBACK */
+.main-portfolio .page.outback .title {
+  color: #b10a11;
+}
+
+.main-portfolio .page.outback .links li:hover a {
+  color: #fff;
+  background-color: #b10a11;
 }
