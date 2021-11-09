@@ -46,8 +46,6 @@ h3 {
   background-color: #c2d5d6;
 }
 
-
-
 /* INNER */
 .inner {
   max-width: 1200px;
@@ -55,6 +53,7 @@ h3 {
   margin: 0 auto;
   position: relative;
 }
+
 
 /* HEADER */
 #header {
