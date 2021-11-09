@@ -298,18 +298,30 @@ h3 {
   display: inline-block;
 }
 
+.main-portfolio .page .links li:not(li:last-child) {
+  margin-right: 5px;
+}
+
+.main-portfolio .page .links li:first-child {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.main-portfolio .page .links li:first-child a {
+  width: 130px;
+}
+
 .main-portfolio .page .links li a {
   display: block;
+  width: 100px;
   padding: 8px 12px;
   border: 1px solid #00695c;
   border-radius: 2px;
+  box-sizing: border-box;
   font-size: 14px;
+  text-align: center;
   color: #00695c;
   transition: .3s;
-}
-
-.main-portfolio .page .links li + li {
-  margin-left: 5px;
 }
 
 .main-portfolio .page .text-group em {
@@ -324,12 +336,22 @@ h3 {
   content: '*';
 }
 
-/* JEJU-BEER */
-.main-portfolio .page.jeju-beer .title {
+/* JEJU BEER */
+.main-portfolio .page.jejubeer .title {
   color: #1ecad3;
 }
 
-.main-portfolio .page.jeju-beer .links li:hover a {
+.main-portfolio .page.jejubeer .links li:hover a {
   color: #fff;
   background-color: #1ecad3;
+}
+
+/* COTIE SHOP */
+.main-portfolio .page.cotieshop .title {
+  color: #F0EDE6;
+}
+
+.main-portfolio .page.cotieshop .links li:hover a {
+  color: #000;
+  background-color: #F0EDE6;
 }
