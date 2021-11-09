@@ -1,3 +1,13 @@
+'use strict';
+
+$(document).on('click', 'a[href="#"]', function (e) {
+  e.preventDefault();
+});
+
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
 // header
 var header = document.getElementById('header');
 window.addEventListener('scroll', function () {
@@ -6,6 +16,14 @@ window.addEventListener('scroll', function () {
   } else {
     header.classList.remove('minimize');
   }
+});
+
+// 모바일 네비게이션
+var gnb = document.getElementById('gnb');
+var menuBtn = header.querySelector('.menu-btn');
+
+menuBtn.addEventListener('click', function () {
+  gnb.classList.toggle('open');
 });
 
 // portfolio view btn
