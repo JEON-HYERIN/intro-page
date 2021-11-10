@@ -124,3 +124,7 @@ function checkPageNow () {
   pageNext = (index === numPage) ? numPage : (index + 1);
   return pageNow;
 }
+
+// 올해년도 구하기
+var thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();

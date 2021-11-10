@@ -437,6 +437,24 @@ h3 {
   font-size: 17px;
 }
 
+/* FOOTER */
+#footer {
+  background-color: #00695c;
+}
+
+#footer .inner {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .copyright {
+  font-size: 15px;
+  font-weight: 500;
+  color: #f4f4f4;
+}
+
 /* 미디어쿼리 */
 @media screen and (max-width: 1200px) {
 
