@@ -452,14 +452,14 @@ h3 {
 }
 
 #footer .inner {
-  height: 80px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #footer .copyright {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
   color: #f4f4f4;
 }
