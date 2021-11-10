@@ -8,14 +8,21 @@ if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
 
-// header
+// header / top-btn
 var header = document.getElementById('header');
+var topBtn = document.getElementById('to-top');
 window.addEventListener('scroll', function () {
   if (window.pageYOffset > 200) {
     header.classList.add('minimize');
+    topBtn.classList.add('visible');
   } else {
     header.classList.remove('minimize');
+    topBtn.classList.remove('visible');
   }
+});
+
+topBtn.addEventListener('click', function () {
+  header.scrollIntoView({behavior:'smooth'});
 });
 
 // 모바일 네비게이션

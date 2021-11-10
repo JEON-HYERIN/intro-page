@@ -117,6 +117,8 @@ h3 {
   top: 50px;
   width: 100%;
   background-color: #f4f4f4;
+  border-bottom: 1px solid #00695c;
+  overflow: auto;
   display: none;
 }
 
@@ -146,16 +148,17 @@ h3 {
   top: 50%;
   transform: translateY(-50%);
   z-index: 9;
+  display: none;
 }
 
 #page-indicator li + li {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 #page-indicator li a {
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 30px;
   border: 3px solid #fff;
   box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
@@ -208,17 +211,9 @@ h3 {
   height: 100%;
 }
 
-.about__profile {
- 
-}
-
 .about__profile > div {
   width: 230px;
   margin: 0 auto;
-}
-
-.about__profile .image {
-
 }
 
 .about__profile .comment {
@@ -232,10 +227,6 @@ h3 {
 .about__profile .comment em {
   font-size: 14px;
   font-weight: 500;
-}
-
-.about__history {
- 
 }
 
 .about__history > ul > li + li {
@@ -408,14 +399,9 @@ h3 {
   line-height: 1.6em;
 }
 
-.main-contact .contact {}
 .contact__links {
   padding-top: 30px;
   text-align: center;
-}
-
-.contact__links li {
-  
 }
 
 .contact__links li + li {
@@ -455,9 +441,6 @@ h3 {
 
 #footer .inner {
   height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #footer .copyright {
@@ -465,4 +448,32 @@ h3 {
   font-weight: 500;
   text-align: center;
   color: #f4f4f4;
+}
+
+/* TO TOP BUTTON */
+#to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  color: #f4f4f4;
+  background-color: #00695c;
+  box-shadow: 3px 3px 5px 0 rgb(0 0 0 / 20%);
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s;
+}
+
+#to-top i {
+  display: block;
+  line-height: 30px;
+}
+
+#to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
