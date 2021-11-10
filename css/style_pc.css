@@ -439,6 +439,8 @@ h3 {
 
 /* FOOTER */
 #footer {
+  height: auto;
+  padding: 0;
   background-color: #00695c;
 }
 
@@ -452,6 +454,7 @@ h3 {
 #footer .copyright {
   font-size: 13px;
   font-weight: 500;
+  text-align: center;
   color: #f4f4f4;
 }
 

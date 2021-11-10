@@ -52,13 +52,13 @@ $('.main-home .btn').on('click', function () {
 });
 
 // section page
-var numPage = $('#main .page').length;
+var numPage = $('.page').length;
 var pageNow = 0;
 var pagePrev = 0;
 var pageNext = 0;
 var wheelEvent = ('onmousewheel' in window) ? 'mousewheel' :  'DOMMouseScroll';
 var onAnimation = false;
-$('#main .page').each(function (i) {
+$('.page').each(function (i) {
   $('#page-indicator').append('<li><a href="#"><span class="hide">' + (i + 1) + '번 페이지</span></a></li>\n');
 });
 
@@ -87,7 +87,7 @@ function showPage (index) {
     return false;
   }
   onAnimation = true;
-  var scrollAmt = $('#main .page:eq(' + (index - 1) + ')').offset().top;
+  var scrollAmt = $('.page:eq(' + (index - 1) + ')').offset().top;
   $('html, body').stop(true).animate({'scrollTop': scrollAmt + 'px'}, 500, function () {
     onAnimation = false;
   });
@@ -108,7 +108,7 @@ $(window).on('scroll', function () {
 function checkPageNow () {
   var scrollAmt = $(document).scrollTop();
   var index = 0;
-  $('#main .page').each(function (i) {
+  $('.page').each(function (i) {
     var pageStart = $(this).offset().top - ($(window).height() / 2);
     var pageEnd = pageStart + $(this).outerHeight(true);
 
